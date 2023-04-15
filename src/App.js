@@ -14,6 +14,8 @@ function App () {
           <img id="grasslands" src="https://cdn.glitch.global/c76a4fd7-d4e0-495b-a83b-9db94de330a2/grassLand2.jpeg?v=1681318434684" alt="light grasslands"/>
           <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg" alt="sky texture"/>
           <img id="nightsky" src='nightsky.png' alt='nightsky'/>
+          <img id="darkSky" src='darkSky.png' alt='darkSky'/>
+          <img id="starynight" src='starynight.png' alt='starynight'/>
 
           <audio id="click-sound" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
           <img id="city" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/city.jpg" alt='city'/>
@@ -23,9 +25,9 @@ function App () {
           <img id="sechelt" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg" alt='sechelt' />
           <img id="sechelt-thumb" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-sechelt.jpg" alt='sechelt-thumb'/>
         </a-assets>
-        <Entity id="floor" primitive="a-plane" rotation="-90 0 0" height="270" width="270" src="#animeGrass1"></Entity>
+        <Entity id="floor" primitive="a-plane" rotation="-90 0 0" height="370" width="370" src="#animeGrass1"></Entity>
         <Entity id="floor2" primitive="a-plane" rotation="-90 0 0" height="80" width="80" position="150 1 0" src="#grasslands"></Entity>
-        <Entity primitive="a-sky" height="3048" radius="120" src="#nightsky" theta-length="90" width="2048"/>
+        <Entity primitive="a-sky" height="11048" radius="720" src="#starynight" theta-length="110" width="6048"/>
         <Entity primitive="a-camera" position="0 3 0">
           <Entity primitive="a-cursor" animation__click={{property: 'scale', startEvents: 'click', from: '0.1 0.1 0.1', to: '1 1 1', dur: 150}}/>
         </Entity>
